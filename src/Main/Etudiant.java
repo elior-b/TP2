@@ -12,6 +12,7 @@ public class Etudiant
     public String nom;
     public String prenom;
     public ArrayList<Cours> list;
+    public Cursus cursus;
 
     /**
      * Constructor for objects of class Etudiant
@@ -50,6 +51,13 @@ public class Etudiant
     		
     	}
     	
+    }
+    public void setCursus(String type,String nomFiliere,String specialite){
+    	cursus = new Cursus(type, nomFiliere, specialite);
+    }
+    public void AfficheCursus()
+    {
+        System.out.println(cursus.getCursus());
     }
 
     /**
