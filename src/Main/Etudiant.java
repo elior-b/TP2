@@ -14,6 +14,7 @@ public class Etudiant
     public ArrayList<Cours> list;
     public Cursus cursus;
     public Hobbies hobbies;
+    private Date graduationDate;
 
     /**
      * Constructor for objects of class Etudiant
@@ -86,6 +87,15 @@ public class Etudiant
         {
             list.get(i).AfficheNomMatiere();
         }
+    }
+    public void addGraduationDate(Date d)
+    {
+    	 graduationDate = d;
+
+    }
+    public Date getGraduationDate()
+    {
+    	return graduationDate;
     }
 
 }
