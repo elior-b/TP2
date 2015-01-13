@@ -13,6 +13,7 @@ public class Etudiant
     public String prenom;
     public ArrayList<Cours> list;
     public Cursus cursus;
+    public Hobbies hobbies;
 
     /**
      * Constructor for objects of class Etudiant
@@ -23,6 +24,7 @@ public class Etudiant
         this.nom = nom;
         this.prenom = prenom;
         list = new ArrayList<Cours>();
+        hobbies = new Hobbies();
         
     }
     
@@ -59,6 +61,7 @@ public class Etudiant
     {
         System.out.println(cursus.getCursus());
     }
+    
 
     /**
      * Cette methode permet de mettre le nom et le prenom de l'etudiant en maj et de les afficher
